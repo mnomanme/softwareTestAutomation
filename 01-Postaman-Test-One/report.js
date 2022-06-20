@@ -2,7 +2,7 @@ const newman = require('newman');
 
 newman.run(
 	{
-		collection: require('./collection/CaseOneTest.postman_collection.json'), // pointing to local JSON file.
+		collection: require('./collection/CaseOneTest.json'), // pointing to local JSON file.
 		// environment: require('./collection/customer_api_env.json'),
 		iterationCount: 1,
 		reporters: 'htmlextra',

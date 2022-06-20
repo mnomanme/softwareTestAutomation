@@ -55,15 +55,12 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"User should be updated\", ()=> {\r",
+							"pm.test(\"User should be updated\", function() {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.message).to.contains(\"User list\");\r",
 							"});\r",
 							"\r",
-							"pm.test(\"User one id should be showed 1\", ()=> {\r",
-							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData.users[0].id).to.eql(1);\r",
-							"});"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -302,7 +299,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Check if new user is creates\", ()=> {\r",
+							"pm.test(\"Check if new user is creates\", function() {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.message).to.contains('User created successfully');\r",
 							"});\r",
@@ -382,7 +379,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Check random new user is creates\", ()=> {\r",
+							"pm.test(\"Check random new user is creates\", function() {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.message).to.contains('User created successfully');\r",
 							"});\r",
@@ -453,12 +450,12 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Check if user already exists\", ()=> {\r",
+							"pm.test(\"Check if user already exists\", function() {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.message).to.contains('User already exists');\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Status code is 208\", ()=> {\r",
+							"pm.test(\"Status code is 208\", function() {\r",
 							"    pm.response.to.have.status(208);\r",
 							"});"
 						],
@@ -518,12 +515,12 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"User Should be updated\", ()=> {\r",
+							"pm.test(\"User Should be updated\", function() {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.message).to.includes('User updated successfully');\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Status code is 200\", ()=> {\r",
+							"pm.test(\"Status code is 200\", function() {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
@@ -587,7 +584,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Only Partial User Should be updated\", ()=> {\r",
+							"pm.test(\"Only Partial User Should be updated\", function() {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.message).to.includes('User updated successfully');\r",
 							"});\r",
@@ -687,7 +684,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"User should be deleted\", ()=> {\r",
+							"pm.test(\"User should be deleted\", function() {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.message).to.contains(\"User deleted successfully\");\r",
 							"});\r",
@@ -754,33 +751,33 @@
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "",
+			"value": "http://dmoney.professionaltrainingbd.com",
 			"type": "string"
 		},
 		{
 			"key": "token",
-			"value": ""
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbG1hbkBncnIubGEiLCJwYXNzd29yZCI6IjEyMzQiLCJpYXQiOjE2NTU3MDM0MTQsImV4cCI6MTY1NTcwNTIxNH0.VYDxSkAG8HFMa0l-GWIm8a_oSYeKSPeN0uqDBI5AekI"
 		},
 		{
 			"key": "phone_number",
-			"value": ""
+			"value": "01514665013"
 		},
 		{
 			"key": "id",
-			"value": ""
+			"value": 2021
 		},
 		{
 			"key": "SECRET-KEY",
-			"value": "",
+			"value": "ROADTOSDET",
 			"type": "string"
 		},
 		{
 			"key": "password",
-			"value": ""
+			"value": 7411
 		},
 		{
 			"key": "nid",
-			"value": ""
+			"value": 4363375850
 		}
 	]
 }
