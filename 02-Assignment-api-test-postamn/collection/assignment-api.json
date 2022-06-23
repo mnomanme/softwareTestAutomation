@@ -164,7 +164,11 @@
 							"    const jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData.message).to.includes('User list');\r",
 							"});\r",
-							""
+							"\r",
+							"pm.test(\"User get first id should be 1\", () => {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.users[0].id).to.eql(1);\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
