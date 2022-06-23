@@ -4,4 +4,7 @@
 
 - ### 02 [API testing Postman Documentation](https://documenter.getpostman.com/view/21523077/UzBpM6R1)
 
-- ### 03 [Reports Preview](./collection/reports_01.png)
+- ### 03 Reports Preview Below
+
+![Reports Preview](./collection/reports_01.png)
+![Reports Preview](./collection/reports_02.png)
