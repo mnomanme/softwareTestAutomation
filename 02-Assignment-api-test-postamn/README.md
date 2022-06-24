@@ -14,11 +14,11 @@
 
 - ### 04 only run collection json file you should following the command below
 
-- ### npx newman run .collection/assignment-api.json
+- #### 05 npm install/ npm i or yarn install
 
-- ### 05 npm install/ npm i or yarn install
+- #### 06 npx newman run .collection/assignment-api.json
 
-- ### 06 npm test or yarn test
+- #### 07 npm test or yarn test
 
 - ### Reports Preview Below
 
