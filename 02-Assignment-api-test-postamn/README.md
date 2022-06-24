@@ -4,7 +4,23 @@
 
 - ### 02 [API testing Postman Documentation](https://documenter.getpostman.com/view/21523077/UzBpM6R1)
 
-- ### 03 Reports Preview Below
+## How to run this project
+
+- ### 01 Clone this project
+
+- ### 02 Open with any code editor (Ex-VS Code) and open terminal inside the project folder
+
+- ### 03 Give the following command
+
+- ### 04 only run collection json file you should following the command below
+
+- ### npx newman run .collection/assignment-api.json
+
+- ### 05 npm install/ npm i or yarn install
+
+- ### 06 npm test or yarn test
+
+- ### Reports Preview Below
 
 ![Reports Preview](./collection/reports_01.png)
 ![Reports Preview](./collection/reports_02.png)
