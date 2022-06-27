@@ -12,7 +12,7 @@
 
 - #### Open in windows terminal or git bash terminal and run below command
 
-- #### jmeter -n -t "your jmx file" -l "your csv file" -e -o Reports
+- #### jmeter -n -t "your jmx file" -l "log_file_name.csv" -e -o Reports
 
 #### Steps
 
