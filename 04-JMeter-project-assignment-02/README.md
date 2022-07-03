@@ -1,18 +1,26 @@
-## JMeter Assignment 02
+# JMeter Assignment 02
 
-#### **Solved:**
+## **Solved:**
 
-- #### [Testing Server API](http://dmoney.professionaltrainingbd.com)
+- ### [Testing Server API](http://dmoney.professionaltrainingbd.com)
 
 #### How to run this project
 
 - #### Clone this project
 
+```bash
+https://github.com/mnomanme/sweet-breakup-sqa.git
+
+cd 04-JMeter-project-assignment-02
+```
+
 - #### Move file into **\apache-jmeter-5.5\bin** this path
 
 - #### Open in windows terminal or git bash terminal and run below command
 
-- #### jmeter -n -t "your jmx file" -l "log_file_name.csv" -e -o Reports
+```bash
+- jmeter -n -t "JMeter-assignment-02.jmx" -l "JMeter-assignment-02.csv" -e -o Reports
+```
 
 #### Steps
 
