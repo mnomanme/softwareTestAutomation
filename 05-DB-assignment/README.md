@@ -120,13 +120,19 @@ WHERE Date_of_Birth BETWEEN '1980-01-01'
 
 - #### 06 Order the customers by points in ascending and descending order
 
+- #### ascending order
+
 ```sql
 SELECT
   *
 FROM
   customers
 ORDER BY Points ASC;
+```
 
+- #### descending order
+
+```sql
 SELECT
   *
 FROM
