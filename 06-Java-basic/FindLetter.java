@@ -13,8 +13,6 @@ public class FindLetter {
     System.out.println("Enter your favorite letter: ");
     myLetter = scanner.next().charAt(0);
 
-    scanner.close();
-
     if (myLetter >= 'A' && myLetter <= 'Z') {
       System.out.println(myLetter + " " + "is capital letter");
     } else if (myLetter >= 'a' && myLetter <= 'z') {
