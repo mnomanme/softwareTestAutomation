@@ -1,3 +1,5 @@
+// Writea program that will give following output: C8M
+
 import java.util.Scanner;
 
 public class CountryDivision {

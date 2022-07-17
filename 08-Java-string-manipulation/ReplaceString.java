@@ -1,5 +1,6 @@
-import java.util.Scanner;
+// Write a program that will count how many vowels in the given string
 
+import java.util.Scanner;
 public class ReplaceString {
   public static void main(String[] args) {
     System.out.println("Input this text: \nRatul and Rahim lives in Rangpur");
