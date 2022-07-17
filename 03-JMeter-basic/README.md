@@ -1,4 +1,4 @@
-# JMeter Assignment 01
+# JMeter Basic
 
 ## **Question**
 

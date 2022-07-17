@@ -1,4 +1,4 @@
-# JMeter Assignment 02
+# JMeter Project
 
 ## **Solved:**
 

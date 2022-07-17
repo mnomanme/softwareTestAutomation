@@ -1,4 +1,4 @@
-# **Assignment API testing with Postman**
+# **API testing with Postman**
 
 - ## 01 [API testing Postman Collection](https://www.getpostman.com/collections/36418ebe6791fa746576)
 

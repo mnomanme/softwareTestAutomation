@@ -1,4 +1,4 @@
-# Database Assignment
+# Database Basic
 
 - ## 01 Create a database named class_one_assignment
 
