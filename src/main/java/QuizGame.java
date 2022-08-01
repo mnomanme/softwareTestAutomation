@@ -15,7 +15,7 @@ public class QuizGame {
         System.out.print("Select one: ");
         int option = input.nextInt();
 
-        if(option == 1) {
+        if (option == 1) {
             quizBank();
 
         } else if (option == 2) {
@@ -23,8 +23,8 @@ public class QuizGame {
         }
     }
     private static void quizBank() throws IOException, ParseException, IOException, ParseException {
-        char ch ='y';
-        String filePath="./src/main/resources/QuestionBank.json";
+        char ch = 'y';
+        String filePath = "./src/main/resources/QuestionBank.json";
         do {
             JSONParser jsonParser = new JSONParser();
             Object obj = jsonParser.parse(new FileReader(filePath));
@@ -32,15 +32,15 @@ public class QuizGame {
             Scanner input = new Scanner(System.in);
             System.out.println("Please add a ques here: ");
             JSONObject quesBank = new JSONObject();
-            quesBank.put("question",input.nextLine());
+            quesBank.put("question", input.nextLine());
 
             System.out.println("Input options:");
-            quesBank.put("Option a",input.nextLine());
-            quesBank.put("Option b",input.nextLine());
-            quesBank.put("Option c",input.nextLine());
-            quesBank.put("Option d",input.nextLine());
+            quesBank.put("Option a", input.nextLine());
+            quesBank.put("Option b", input.nextLine());
+            quesBank.put("Option c", input.nextLine());
+            quesBank.put("Option d", input.nextLine());
             System.out.print("Please input the correct ans: ");
-            quesBank.put("answer",input.next());
+            quesBank.put("answer", input.next());
 
             JSONArray quesBankArray = (JSONArray) obj;
             quesBankArray.add(quesBank);
@@ -53,24 +53,24 @@ public class QuizGame {
             System.out.print(quesBankArray);
             System.out.print(quesBankArray);
             System.out.println("\nDo you want to add more?[y/n]");
-            ch=input.next().charAt(0);
+            ch = input.next().charAt(0);
 
         }
-        while(ch!='n');
+        while (ch != 'n');
     }
 
     public static void startQuiz() throws IOException, ParseException {
         int point = 0;
 
-        String filePath="./src/main/resources/all_questions.json";
+        String filePath = "./src/main/resources/all_questions.json";
 
         JSONParser jsonParser = new JSONParser();
         Object obj = jsonParser.parse(new FileReader(filePath));
         JSONArray quizArray = (JSONArray) obj;
-        for(int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++) {
             int min = 1;
             int max = quizArray.size();
-            int pos = (int)(Math.random()*(max-min+1)+min);
+            int pos = (int)(Math.random() * (max - min + 1) + min);
 
             JSONObject quizObject = (JSONObject) quizArray.get(pos);
             String name = (String) quizObject.get("question");
@@ -89,11 +89,10 @@ public class QuizGame {
             String givenAns = input.next();
             String ans = (String) quizObject.get("answer");
 
-            if(givenAns.equals(ans)) {
+            if (givenAns.equals(ans)) {
                 System.out.println("Correct!");
                 point++;
-            }
-            else {
+            } else {
                 System.out.println("Not Correct!");
             }
         }
